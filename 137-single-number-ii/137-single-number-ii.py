@@ -1,3 +1,7 @@
+#faster solution
+#thrice the sum of the set values subracted by sum of set values gives the answer
+#return (sum(set(nums)) * 3 - sum(nums)) // 2
+
 class Solution(object):
     def singleNumber(self, nums):
         """
