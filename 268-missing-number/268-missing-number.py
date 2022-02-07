@@ -1,3 +1,8 @@
+
+#faster method using N(N+1)/2 formula
+ #return len(nums) * (len(nums)+1) / 2 - sum(nums)
+
+#naive method
 class Solution(object):
     def missingNumber(self, nums):
         """
