@@ -1,4 +1,4 @@
-#Fastrer solution
+#Faster solution
 # class Solution(object):
 #     def findPairs(self, nums, k):
 #         """
