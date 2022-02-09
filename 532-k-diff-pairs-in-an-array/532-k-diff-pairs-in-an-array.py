@@ -1,3 +1,24 @@
+#Fastrer solution
+# class Solution(object):
+#     def findPairs(self, nums, k):
+#         """
+#         :type nums: List[int]
+#         :type k: int
+#         :rtype: int
+#         """
+#         two_diff = set()
+#         res = set()
+#         for num in nums:
+#             if num+k in two_diff:
+#                 res.add((num, num+k))
+#             if num-k in two_diff:
+#                 res.add((num-k, num))
+#             two_diff.add(num)
+            
+       
+#         return len(res)
+
+#####################
 class Solution(object):
     def findPairs(self, nums, k):
         """
