@@ -32,4 +32,19 @@ class Solution(object):
 # 1->4
 # 4->7
 # Hence, 3 sub arrays of sums=k
+
+#faster method
+#         _map = {0:1}
+#         _sum = 0
+#         result = 0
+#         for item in nums:
+#             _sum += item
+#             j = _sum - k
+#             if j in _map:
+#                 result += _map[j]
+#             if _sum in _map:
+#                 _map[_sum] += 1
+#             else:
+#                 _map[_sum] = 1
+#         return result
             
