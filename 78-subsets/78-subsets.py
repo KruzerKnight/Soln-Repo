@@ -14,3 +14,19 @@ class Solution:
                     temp.append(nums[j])
             l.append(temp)
         return l
+    
+    #faster solution
+#     class Solution:
+#     def subsets(self, nums: List[int]) -> List[List[int]]:
+#         res = []
+#         def backtrack(lst, start):
+#             res.append(list(lst))
+            
+#             for i in range(start, len(nums)):
+#                 lst.append(nums[i])
+                
+#                 backtrack(lst, i+1)
+#                 lst.pop()
+            
+#         backtrack([],  0)
+#         return res
