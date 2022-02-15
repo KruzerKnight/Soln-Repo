@@ -11,4 +11,10 @@ class Solution:
             miss_num=exp_sum-sum1
         rep_num=sum2-exp_sum+miss_num
         return [rep_num,miss_num]
-        
+#same idea but faster
+# class Solution:
+#     def findErrorNums(self, nums: List[int]) -> List[int]:        
+#         nlen = len(nums)
+#         setsum = sum(set(nums))
+#         numsSum = (nlen * (nlen + 1)) // 2
+#         return [sum(nums) - setsum, numsSum - setsum]
