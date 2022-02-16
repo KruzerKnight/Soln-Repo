@@ -10,6 +10,12 @@ class Solution:
 # another method
 # class Solution:
 #     def reverseBits(self, n: int) -> int:
+#         b_str ="{0:b}".format(n).zfill(32)
+#         return int(b_str[::-1],2)
+
+# another method
+# class Solution:
+#     def reverseBits(self, n: int) -> int:
 #         ret, power = 0, 31
 #         while n:
 #             ret += (n & 1) << power
