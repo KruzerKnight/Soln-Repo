@@ -13,3 +13,14 @@ class Solution:
             n,r=divmod(n,3)
             if r==2: return False
         return True
+    
+# same code but without divmod is faster
+# class Solution:
+#     def checkPowersOfThree(self, n: int) -> bool:
+#         while n > 0:
+#             while n %3 == 0:
+#                 n = n //3
+#             if n % 3 == 2:
+#                 return False
+#             n = n-1
+#         return True
