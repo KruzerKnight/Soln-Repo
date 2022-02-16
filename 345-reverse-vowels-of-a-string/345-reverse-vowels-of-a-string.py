@@ -14,4 +14,19 @@ class Solution:
                 s[j]=l[i]
                 i+=1
         return ''.join(s)
-                
+    
+# faster solution using stack
+# class Solution:
+#     def reverseVowels(self, s: str) -> str:
+#         chars = 'aeiouAEIOU'
+#         data = []
+#         for i in s:
+#             if i in chars:
+#                 data.append(i)
+#         result = ''
+#         for let in s:
+#             if let in chars:
+#                 result += data.pop()
+#             else:
+#                 result += let
+#         return result
