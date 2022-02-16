@@ -1,3 +1,9 @@
+# faster method
+# class Solution:
+#     def hammingDistance(self, x: int, y: int) -> int:
+#         z = bin( x ^ y )
+#         return z.count('1')
+
 class Solution:
     def hammingDistance(self, x: int, y: int) -> int:
         a=max(x,y)
@@ -10,3 +16,4 @@ class Solution:
             if(a[i]!=b[i]):
                 count+=1
         return count
+    
