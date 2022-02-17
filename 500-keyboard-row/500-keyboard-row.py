@@ -13,7 +13,7 @@ class Solution:
                         break
                 if(fl):
                     l.append(i)
-            if(i[0] in row2):
+            elif(i[0] in row2):
                 fl=1
                 for j in row1+row3:
                     if j in i:
@@ -21,7 +21,7 @@ class Solution:
                         break
                 if(fl):
                     l.append(i)
-            if(i[0] in row3):
+            elif(i[0] in row3):
                 fl=1
                 for j in row2+row1:
                     if j in i:
@@ -30,3 +30,11 @@ class Solution:
                 if(fl):
                     l.append(i)
         return l
+    # faster solution
+    # class Solution:
+    # def findWords(self, words: List[str]) -> List[str]:
+    #     def isMatch(word):
+    #         return set(word.lower()).issubset(set("qwertyuiop")) \
+    #             or set(word.lower()).issubset(set("asdfghjkl")) \
+    #             or set(word.lower()).issubset(set("zxcvbnm"))
+    #     return list(filter(isMatch, words))
