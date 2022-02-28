@@ -25,6 +25,14 @@ class Solution:
                     d[s]=1
             maxi=max(maxi,max(d.values())+dup)
         return maxi
+# We can solve above problem by following approach – For each point p, 
+# calculate its slope with other points and use a map to record how many points have same slope,
+# by which we can find out how many points are on same line with p as their one point.
+# For each point keep doing the same thing and update the maximum number of point count found so far.
+# Some things to note in implementation are: 
+# 1) if two point are (x1, y1) and (x2, y2) then their slope will be (y2 – y1) / (x2 – x1) which can be a double value and can cause precision problems.
+# To get rid of the precision problems, we treat slope as pair ((y2 – y1), (x2 – x1)) instead of ratio and reduce pair by their gcd before inserting into map.
+    
 
 #{ 
 #  Driver Code Starts
