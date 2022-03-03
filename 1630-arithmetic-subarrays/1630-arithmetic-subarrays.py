@@ -12,7 +12,6 @@ class Solution:
                     if s[j+1]-s[j]==d:
                         nn+=1
                     else:
-                        print('1')
                         ll.append(False)
                         break
                 if nn==n-2:
@@ -20,3 +19,8 @@ class Solution:
             else:
                 ll.append(False)
         return ll
+    
+    # 1502. Can Make Arithmetic Progression From Sequence
+    # Check this question where the solution i have done is without sorting
+    # Which is implemented for single array can be implemented here for multiple subarrays
+    
