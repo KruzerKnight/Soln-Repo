@@ -1,3 +1,6 @@
+Similar Question
+https://leetcode.com/problems/container-with-most-water/
+
 <h2><a href="https://leetcode.com/problems/trapping-rain-water/">42. Trapping Rain Water</a></h2><h3>Hard</h3><hr><div><p>Given <code>n</code> non-negative integers representing an elevation map where the width of each bar is <code>1</code>, compute how much water it can trap after raining.</p>
 
 <p>&nbsp;</p>
