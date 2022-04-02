@@ -12,3 +12,4 @@ class Solution:
         return matrix[beg//m][beg%m] == target
     
 # if we need element number i from our flattened list, it coresponds to element matrix[i//m][i%m] in our matrix.
+
