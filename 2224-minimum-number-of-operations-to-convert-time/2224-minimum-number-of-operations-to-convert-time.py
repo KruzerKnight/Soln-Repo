@@ -6,7 +6,6 @@ class Solution:
         m=int(correct[3:])-int(current[3:])
         dit=h*60+m
         count=0
-        print(dit)
         if dit>=60:
             count+=dit//60
             dit=dit%60
