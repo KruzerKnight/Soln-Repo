@@ -62,3 +62,27 @@ if __name__ == '__main__':
         print (res[0], end=" ")
         print (res[1])
 # } Driver Code Ends
+
+#heap
+#  # code here
+#         Jobs.sort(key=lambda x:x[1])
+        
+#         res=[]
+#         maxheap=[]
+        
+#         for i in range(n-1,-1,-1):
+#             if i==0:
+#                 slot=Jobs[i][1]
+#             else:
+#                 slot=Jobs[i][1]-Jobs[i-1][1]
+            
+#             heapq.heappush(maxheap,(-Jobs[i][2],Jobs[i][1],Jobs[i][0])) #since by deafault it is minheap, 
+#             # giving in negative value makes it work as maxheap
+#             while slot and maxheap:
+#                 pro,dead,id=heapq.heappop(maxheap)
+#                 slot-=1
+#                 res.append([id,dead])
+#             result.sort(key=lambda x:x[1])
+            
+#             for i in res:
+#                 print(i[0],end=' ')
