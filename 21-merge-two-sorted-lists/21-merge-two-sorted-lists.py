@@ -23,10 +23,6 @@ class Solution:
         
         if l1:
             th.next=l1
-            l1=l1.next
-            th=th.next
         if l2:
             th.next=l2
-            l2=l2.next
-            th=th.next
         return head1.next
