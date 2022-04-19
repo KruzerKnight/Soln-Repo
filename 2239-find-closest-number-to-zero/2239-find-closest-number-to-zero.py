@@ -7,3 +7,6 @@ class Solution:
                     continue
                 small=i
         return small
+    
+#     res = [abs(i) for i in nums]
+#         return min(res) if min(res) in nums else -min(res)
