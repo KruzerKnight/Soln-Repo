@@ -11,4 +11,13 @@ class Solution:
             l[n]=kruz(n-1)+kruz(n-2)
             return l[n]
         return kruz(num)
+    #above is dp
+    #below is no dp
+    # class Solution:
+    # def fib(self, n: int) -> int:
+    #     a=1
+    #     b=0
+    #     for _ in range(n):
+    #         a,b=b,a+b
+    #     return b
     
