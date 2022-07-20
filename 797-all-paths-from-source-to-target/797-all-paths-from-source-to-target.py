@@ -10,8 +10,8 @@ class Solution:
             node,path=stack.pop()
             
             if node==n-1:
-                res.append(path)
+                res.append(path) #adding the path as it reached the destination
                 continue
             for i in d[node]:
-                stack.append([i,path+[i]])
+                stack.append([i,path+[i]]) #adding the current node thus ot
         return res
