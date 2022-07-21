@@ -3,7 +3,6 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        
         def rev(start,end):
             while start<end:
                 nums[start],nums[end]=nums[end],nums[start]
