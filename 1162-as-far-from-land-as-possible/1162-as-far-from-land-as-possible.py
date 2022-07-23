@@ -27,6 +27,8 @@ class Solution:
                     continue
 
                 q.append((X,Y,d+1))
+                
+                #distance is added by 1,since in every iteration there is a waterbody away from land ,thus till it is reached we iterate, when we reach the final distance is of the maximum nearest land
                 grid[X][Y]=1
                     
         return q[-1][-1]
