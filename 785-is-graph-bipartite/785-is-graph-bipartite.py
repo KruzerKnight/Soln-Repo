@@ -1,6 +1,5 @@
 class Solution:
     def isBipartite(self, graph: List[List[int]]) -> bool:
-        
         def Bipartite(i):
             q=[]
             q.append(i)
@@ -25,5 +24,3 @@ class Solution:
                 if not Bipartite(i):
                     return False
         return True
-        
-                    
