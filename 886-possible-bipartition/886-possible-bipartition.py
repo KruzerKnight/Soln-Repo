@@ -32,3 +32,4 @@ class Solution:
                 if not Bipartite(i):
                     return False
         return True
+        
