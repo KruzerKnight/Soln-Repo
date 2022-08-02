@@ -1,6 +1,5 @@
 class Solution:
     def maximalNetworkRank(self, n: int, roads: List[List[int]]) -> int:
-        
         if len(roads)==0:
             return 0
         elif len(roads)==1:
@@ -21,4 +20,3 @@ class Solution:
                     rank-=1
                 maxi=max(maxi,rank)
         return maxi
-        
