@@ -1,0 +1,3 @@
+# Write your MySQL query statement below
+SELECT A.NAME AS Employee FROM EMPLOYEE A,EMPLOYEE B
+WHERE A.SALARY > B.SALARY AND A.MANAGERID=B.ID
